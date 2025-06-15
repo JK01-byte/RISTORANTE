@@ -1,0 +1,272 @@
+body {margin: 0px; 
+    background-color: #fefbea;
+
+
+}
+
+.italien-flagge {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin-top: -40px;
+}
+
+.italien-flagge > div {
+    flex: 1;
+}
+
+.grün {
+    background-color: #009246;
+}
+
+.weiss {
+    background-color: #ffffff;
+}
+
+.rot {
+
+    background-color: red;
+}
+
+
+ nav ul  {
+
+    display: flex; 
+    justify-content: space-evenly;
+    font-family: "Allura"; 
+    font-size: 40px;
+    font-style: normal;
+    color: #bba052;
+    margin-top: 0px;
+    height: 75px;
+    background-color: #4b3e2b;
+    
+}
+
+a {
+    margin-top: 10px;
+}
+
+header {
+    text-align: center;
+    font-family: "Allura";
+    font-size: 100px;
+    color: #edc967;
+    margin-top: 20px;
+}
+
+.Untertitel {
+    text-align: center;
+    font-family: "Allura";
+    color: #edc967;
+    font-size: 30px;
+    margin-top: -25px;
+    
+}
+
+.Gallerie {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    width: 100%;  
+}
+
+.Gallerie img {
+ 
+    object-fit: cover;
+    border: 15px solid white;
+    
+}
+
+
+#vorspeise  {
+    position: absolute;
+    margin-left:-700px;
+    width: 400px;
+    height: 300px;
+}
+
+#hauptgang {
+    position: absolute;
+    z-index: 2;
+    height: 350px;
+    width: 500px;
+    margin-top: -25px;
+}
+
+
+
+#nachspeise {
+    position: absolute;
+    margin-left: 60px;
+    margin-right: -700px;
+    width: 400px;
+    height: 300px;
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.Begrüßung {
+    text-align: center;
+    color: #edc967;
+    font-family: "Allura";
+    font-size: 50px;
+    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+.img_box {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-height: 70vh;
+    margin: 50px auto;
+    border: 15px solid white;
+}
+
+.Begrüßungstext { 
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    text-align: center;
+    color:  #edc967 ;
+    font-family: "Allura"; 
+    font-size: 30px;
+}
+
+.Begrüßungsabschnitt {
+    background-color: #4b3e2b;
+    height: 350px;
+    margin-top: 400px;
+}
+
+.frank-rosin-section {
+    background-color: #4b3e2b;
+    height: 600px;
+}
+
+#zitat_r {
+    text-align: right;   
+    color:  #edc967;
+    font-family: "Allura"; 
+    font-size: 75px;
+    margin-top: -450px;
+    margin-left: 700px;
+    margin-right: 210px;
+
+}
+
+#frankrosin {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 0px;
+    margin-left: -100px;
+}
+
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px;
+    margin: -20px;
+  }
+  
+  .footer-section h3 {
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section p {
+    margin: 4px 0;
+    line-height: 1.4;
+  }
+
+  
+  .Tischreservierung {
+    text-align: center;
+    font-family: "Allura";
+    font-size: 70px;
+    color: #edc967;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin-left: 520px;
+    
+  }
+  
+  input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    background: white;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  #hintergrundbild {
+    background-image: url("hintergrundbild.jpg");
+    background-size: 1550px 810px;
+  }
+
+.überuns {
+    text-align: center;
+    font-family: "Allura";
+    font-size: 70px;
+    color: #edc967;
+
+}
+
+.geschichte {
+    margin-left: 150px;
+    margin-right: 150px;
+    color:  #edc967 ;
+    font-family: "Allura"; 
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 185px;
+    margin-top: 60px;
+}
+
+.pizzahintergrund {
+    background-image: url("pizzahintergrund.png");
+    background-size: 1550px 810px;
+}
+
+.uhrzeitreservierung {
+    margin-bottom: 300px;
+}
+
+
+  
+  
+  
+
+
