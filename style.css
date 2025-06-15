@@ -14,7 +14,8 @@ a {
   display: flex;
   width: 100%;
   height: 25px;
-  margin-top: 40px;
+  margin-top: 0px;
+  z-index: 0;
 }
 
 .italien-flagge > div {
@@ -280,20 +281,20 @@ input {
 
 .navbar {
   background-color: #4b3e2b;
+  color: #f7d08a;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  height: 75px;
+  padding: 10px 20px;
   font-family: "Allura";
 }
 
-.navbar .logo {
-  font-size: 40px;
+.logo {
+  font-size: 30px;
   color: #f7d08a;
 }
 
-.navbar .hamburger {
+.hamburger {
   display: none;
   font-size: 30px;
   background: none;
@@ -304,17 +305,17 @@ input {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
 }
 
 .nav-links li a {
-  color: #f7d08a;
-  font-size: 30px;
   text-decoration: none;
+  color: #f7d08a;
+  font-size: 24px;
 }
 
-/* Mobile Navigation */
+/* Mobil */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -324,23 +325,19 @@ input {
     display: none;
     flex-direction: column;
     background-color: #4b3e2b;
-    position: absolute;
-    top: 75px;
-    left: 0;
     width: 100%;
-    padding: 20px 0;
-    z-index: 999;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 20px;
   }
 
   .nav-links.active {
     display: flex;
   }
-
-  .nav-links li {
-    text-align: center;
-    padding: 10px 0;
-  }
 }
+
+
 /* Toggle-Button */
 #darkModeToggle {
   position: fixed;

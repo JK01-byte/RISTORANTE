@@ -15,17 +15,17 @@
     />
   </head>
   <body>
-	<nav class="navbar">
+<nav class="navbar">
 	<button id="darkModeToggle" aria-label="Dark Mode umschalten">🌙</button>
-	<div class="logo">Trattoria</div>
-	<button class="hamburger" aria-label="Menü öffnen">&#9776;</button>
-	<ul class="nav-links">
-		<li><a href="index.html">Startseite</a></li>
+	<div class="logo">Trattoria Bella Vita</div>
+	<button class="hamburger" id="hamburger">&#9776;</button>
+	<ul class="nav-links" id="navLinks">
+		<li><a href="startseite.html">Startseite</a></li>
 		<li><a href="https://drive.google.com/file/d/12aY15AhBsZWRGKmUl4YsCuUrF8MW4Pes/view?usp=sharing">Menü</a></li>
 		<li><a href="reservierung.html">Reservierung</a></li>
 		<li><a href="überuns.html">Über uns</a></li>
 	</ul>
-	</nav>
+</nav>
     <div class="italien-flagge">
       <div class="grün"></div>
       <div class="weiss"></div>
@@ -94,32 +94,36 @@
         </div>
       </div>
     </footer>
-	<script>
-		const hamburger = document.querySelector(".hamburger");
-		const navLinks = document.querySelector(".nav-links");
+<script>
+  document.getElementById("hamburger").addEventListener("click", () => {
+    document.getElementById("navLinks").classList.toggle("active");
+  });
+</script>
 
-		hamburger.addEventListener("click", () => {
-			navLinks.classList.toggle("active");
-		});
-	</script>
 <script>
   const toggle = document.getElementById("darkModeToggle");
   const body = document.body;
 
-  // Check localStorage
-  if (localStorage.getItem("darkMode") === "enabled") {
+  const userPref = localStorage.getItem("darkMode");
+  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  if (userPref === "enabled") {
+    body.classList.add("dark");
+    toggle.textContent = "☀️";
+  } else if (userPref === "disabled") {
+    body.classList.add("light");
+    toggle.textContent = "🌙";
+  } else if (systemPrefersDark) {
     body.classList.add("dark");
     toggle.textContent = "☀️";
   }
 
   toggle.addEventListener("click", () => {
     body.classList.toggle("dark");
+    body.classList.toggle("light");
+
     const isDark = body.classList.contains("dark");
-
-    // Symbol wechseln
     toggle.textContent = isDark ? "☀️" : "🌙";
-
-    // Modus speichern
     localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
   });
 </script>
