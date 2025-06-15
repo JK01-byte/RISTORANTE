@@ -15,15 +15,16 @@
     />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a style="color: #f7d08a" href="startseite.html">Startseite</a></li>
-        <li><a style="color: #f7d08a" href="https://drive.google.com/file/d/12aY15AhBsZWRGKmUl4YsCuUrF8MW4Pes/view?usp=sharing">Menü</a></li>
-        <li><a style="color: #f7d08a" href="reservierung.html">Reservierung</a></li>
-        <li><a style="color: #f7d08a" href="überuns.html">Über uns</a></li>
-      </ul>
-    </nav>
-
+	<nav class="navbar">
+	<div class="logo">Trattoria</div>
+	<button class="hamburger" aria-label="Menü öffnen">&#9776;</button>
+	<ul class="nav-links">
+		<li><a href="index.html">Startseite</a></li>
+		<li><a href="https://drive.google.com/file/d/12aY15AhBsZWRGKmUl4YsCuUrF8MW4Pes/view?usp=sharing">Menü</a></li>
+		<li><a href="reservierung.html">Reservierung</a></li>
+		<li><a href="überuns.html">Über uns</a></li>
+	</ul>
+	</nav>
     <div class="italien-flagge">
       <div class="grün"></div>
       <div class="weiss"></div>
@@ -92,5 +93,13 @@
         </div>
       </div>
     </footer>
-  </body>
+	<script>
+		const hamburger = document.querySelector(".hamburger");
+		const navLinks = document.querySelector(".nav-links");
+
+		hamburger.addEventListener("click", () => {
+			navLinks.classList.toggle("active");
+		});
+	</script>
+</body>
 </html>

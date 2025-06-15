@@ -277,3 +277,67 @@ input {
     font-size: 22px;
   }
 }
+
+.navbar {
+  background-color: #4b3e2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 75px;
+  font-family: "Allura";
+}
+
+.navbar .logo {
+  font-size: 40px;
+  color: #f7d08a;
+}
+
+.navbar .hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #f7d08a;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #f7d08a;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #4b3e2b;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
