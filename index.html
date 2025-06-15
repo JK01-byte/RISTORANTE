@@ -103,7 +103,10 @@
 <script>
   const toggle = document.getElementById("darkModeToggle");
   const body = document.body;
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
 
+  // Dark Mode initial einstellen
   const userPref = localStorage.getItem("darkMode");
   const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -126,6 +129,12 @@
     toggle.textContent = isDark ? "☀️" : "🌙";
     localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
   });
+
+  // Hamburger-Menü aktivieren
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
 </script>
+
 </body>
 </html>

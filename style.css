@@ -283,15 +283,25 @@ input {
   background-color: #4b3e2b;
   color: #f7d08a;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
   font-family: "Allura";
+  position: relative;
 }
 
-.logo {
-  font-size: 30px;
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  flex-grow: 1;
+}
+
+.nav-links li a {
+  text-decoration: none;
   color: #f7d08a;
+  font-size: 24px;
 }
 
 .hamburger {
@@ -303,39 +313,41 @@ input {
   cursor: pointer;
 }
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #f7d08a;
+.darkmode-toggle {
   font-size: 24px;
+  background: none;
+  border: none;
+  color: #f7d08a;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-/* Mobil */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
     background-color: #4b3e2b;
     width: 100%;
     position: absolute;
-    top: 70px;
+    top: 60px;
     left: 0;
     padding: 20px;
+    z-index: 10;
   }
 
   .nav-links.active {
     display: flex;
   }
+
+  .hamburger {
+    display: block;
+  }
+
+  .darkmode-toggle {
+    display: none; /* 🔴 Versteckt das Symbol auf Mobilgeräten */
+  }
 }
+
 
 
 /* Toggle-Button */
