@@ -16,6 +16,7 @@
   </head>
   <body>
 	<nav class="navbar">
+	<button id="darkModeToggle" aria-label="Dark Mode umschalten">🌙</button>
 	<div class="logo">Trattoria</div>
 	<button class="hamburger" aria-label="Menü öffnen">&#9776;</button>
 	<ul class="nav-links">
@@ -101,5 +102,26 @@
 			navLinks.classList.toggle("active");
 		});
 	</script>
+<script>
+  const toggle = document.getElementById("darkModeToggle");
+  const body = document.body;
+
+  // Check localStorage
+  if (localStorage.getItem("darkMode") === "enabled") {
+    body.classList.add("dark");
+    toggle.textContent = "☀️";
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    const isDark = body.classList.contains("dark");
+
+    // Symbol wechseln
+    toggle.textContent = isDark ? "☀️" : "🌙";
+
+    // Modus speichern
+    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+  });
+</script>
 </body>
 </html>
