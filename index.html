@@ -1,140 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trattoria Bella Vita | Start</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
   </head>
   <body>
-<nav class="navbar">
-	<div class="logo">Trattoria Bella Vita</div>
-	<button class="hamburger" id="hamburger">&#9776;</button>
-	<ul class="nav-links" id="navLinks">
-		<li><a href="index.html">Startseite</a></li>
-		<li><a href="https://drive.google.com/file/d/12aY15AhBsZWRGKmUl4YsCuUrF8MW4Pes/view?usp=sharing">Menü</a></li>
-		<li><a href="reservierung.html">Reservierung</a></li>
-		<li><a href="überuns.html">Über uns</a></li>
-	</ul>
-	<button id="darkModeToggle" aria-label="Dark Mode umschalten">🌙</button>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="logo">Trattoria Bella Vita</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="https://drive.google.com/file/d/...">Menü</a></li>
+        <li><a href="reservierung.html">Reservierung</a></li>
+        <li><a href="überuns.html">Über uns</a></li>
+      </ul>
+      <button id="darkModeToggle" class="darkmode-toggle">🌙</button>
+    </nav>
+
+    <!-- Italien-Flagge -->
     <div class="italien-flagge">
       <div class="grün"></div>
       <div class="weiss"></div>
       <div class="rot"></div>
     </div>
 
+    <!-- Header -->
     <header>Trattoria Bella Vita</header>
     <p class="Untertitel">Bon Appétit!</p>
 
+    <!-- Gallerie -->
     <main class="Gallerie">
-      <img src="bruschetta.jpg" id="vorspeise" />
-      <img src="lasagne.jpg" id="hauptgang" />
-      <img src="Pannacotta.webp" id="nachspeise" />
+      <img src="bruschetta.jpg" alt="Vorspeise" />
+      <img src="lasagne.jpg" alt="Hauptgang" />
+      <img src="Pannacotta.webp" alt="Nachspeise" />
     </main>
 
+    <!-- Begrüßung -->
     <section class="Begrüßungsabschnitt">
       <p class="Begrüßung">Benvenuti – Herzlich willkommen!</p>
       <p class="Begrüßungstext">
-        Tauchen Sie ein in die Welt der italienischen Gastfreundschaft und
-        lassen Sie sich von mediterranem Flair verzaubern. In unserem Restaurant
-        erwarten Sie kulinarische Highlights aus Bella Italia – mit Leidenschaft
-        zubereitet, frisch serviert und mit einem Lächeln präsentiert. Ob ein
-        gemütliches Abendessen zu zweit oder ein geselliger Abend mit Freunden
-        und Familie – wir bieten Ihnen den perfekten Ort, um den Alltag hinter
-        sich zu lassen und den Moment zu genießen. Ein Hauch von Italien –
-        mitten in Ihrer Stadt.
+        Tauchen Sie ein in die Welt der italienischen Gastfreundschaft...
       </p>
     </section>
 
+    <!-- Bild -->
     <section class="img_box">
       <img class="center-fit" src="pexels-valeria-boltneva-1123260-3-1024x683.jpg" alt="">
     </section>
 
+    <!-- Zitat -->
     <section class="frank-rosin-section">
-      <img src="frank-rosin.png" id="frankrosin">
-      <p id="zitat_r"> Hier geht es nicht um Show, sondern um Geschmack - und der stimmt bei jedem Bissen</p>  
+      <img src="frank-rosin.png" alt="Frank Rosin">
+      <p class="zitat">Hier geht es nicht um Show, sondern um Geschmack – und der stimmt bei jedem Bissen.</p>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
           <h3>ANSCHRIFT</h3>
-          <p>
-            Trattoria Bella Vita<br />
-            Via Roma 12<br />
-            12345 Musterstadt
-          </p>
+          <p>Trattoria Bella Vita<br />Via Roma 12<br />12345 Musterstadt</p>
         </div>
-
         <div class="footer-section">
           <h3>TELEFON</h3>
           <p>01234-567890</p>
-
           <h3>KONTAKT</h3>
           <p>info@bellavita.de</p>
         </div>
-
         <div class="footer-section">
           <h3>ÖFFNUNGSZEITEN</h3>
           <p><strong>Montag – Donnerstag:</strong><br />11:30 – 23:30 Uhr</p>
           <p><strong>Freitag – Samstag:</strong><br />11:30 – 00:00 Uhr</p>
           <p><strong>Sonntag:</strong><br />11:30 – 23:30 Uhr</p>
-          <p style="font-size: 0.9em">
-            Die Küche schließt eine Stunde vor Ladenschluss.
-          </p>
         </div>
       </div>
     </footer>
-<script>
-  document.getElementById("hamburger").addEventListener("click", () => {
-    document.getElementById("navLinks").classList.toggle("active");
-  });
-</script>
 
-<script>
-  const toggle = document.getElementById("darkModeToggle");
-  const body = document.body;
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
+    <script>
+      const toggle = document.getElementById("darkModeToggle");
+      const body = document.body;
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
 
-  // Dark Mode initial einstellen
-  const userPref = localStorage.getItem("darkMode");
-  const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      // Initial Dark Mode
+      const userPref = localStorage.getItem("darkMode");
+      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  if (userPref === "enabled") {
-    body.classList.add("dark");
-    toggle.textContent = "☀️";
-  } else if (userPref === "disabled") {
-    body.classList.add("light");
-    toggle.textContent = "🌙";
-  } else if (systemPrefersDark) {
-    body.classList.add("dark");
-    toggle.textContent = "☀️";
-  }
+      if (userPref === "enabled" || (!userPref && systemDark)) {
+        body.classList.add("dark");
+        toggle.textContent = "☀️";
+      }
 
-  toggle.addEventListener("click", () => {
-    body.classList.toggle("dark");
-    body.classList.toggle("light");
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        const isDark = body.classList.contains("dark");
+        toggle.textContent = isDark ? "☀️" : "🌙";
+        localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+      });
 
-    const isDark = body.classList.contains("dark");
-    toggle.textContent = isDark ? "☀️" : "🌙";
-    localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
-  });
-
-  // Hamburger-Menü aktivieren
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-</script>
-
-</body>
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
