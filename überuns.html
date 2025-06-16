@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="robots" content="noindex, nofollow">
     <title>Trattoria Bella Vita | Über uns</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
@@ -14,13 +15,16 @@
     />
   </head>
   <body class="pizzahintergrund">
-    <nav>
-      <ul>
-        <a style="color: #f7d08a" href="index.html">Startseite</a>
-        <a style="color: #f7d08a" href="https://drive.google.com/file/d/12aY15AhBsZWRGKmUl4YsCuUrF8MW4Pes/view?usp=sharing">Menü</a>
-        <a style="color: #f7d08a" href="reservierung.html">Reservierung</a>
-        <a style="color: #f7d08a" href="überuns.html">Über uns</a>
+    <nav class="navbar">
+      <div class="logo">Trattoria Bella Vita</div>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Startseite</a></li>
+		<li><a href="Restaurant_Speisekarte.pdf">Menü</a></li>
+        <li><a href="reservierung.html">Reservierung</a></li>
+        <li><a href="überuns.html">Über uns</a></li>
       </ul>
+      <button id="darkModeToggle" class="darkmode-toggle">🌙</button>
     </nav>
 
     <div class="italien-flagge">
