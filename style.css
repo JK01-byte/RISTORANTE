@@ -30,7 +30,7 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 32px;
+  padding: 15px 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -46,7 +46,7 @@ body.dark {
   display: flex;
   gap: 30px;
   list-style: none;
-  font-size: 24px;
+  font-size: 1.4rem;
   flex-grow: 1;
   justify-content: center;
 }
@@ -73,7 +73,7 @@ body.dark {
   cursor: pointer;
 }
 
-/* Responsiv */
+/* Responsiv für kleine Bildschirme*/
 @media (max-width: 768px) {
   .nav-links {
     display: none;
