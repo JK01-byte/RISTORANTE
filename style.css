@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #fefbea;
   font-family: 'Allura', cursive;
-  font-size: 80px; 
+  font-size: 32px; 
 }
 
 body.dark {
@@ -30,7 +30,7 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 32px;
   position: sticky;
   top: 0;
   z-index: 1000;
