@@ -46,7 +46,7 @@ body.dark {
   display: flex;
   gap: 30px;
   list-style: none;
-  font-size: 32px;
+  font-size: 32px !important;
   flex-grow: 1;
   justify-content: center;
 }
