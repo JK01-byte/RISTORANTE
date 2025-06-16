@@ -44,7 +44,7 @@ body.dark {
 
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
   flex-grow: 1;
   justify-content: center;
