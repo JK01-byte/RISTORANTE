@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #fefbea;
   font-family: 'Allura', cursive;
+  font-size: 16px; 
 }
 
 body.dark {
@@ -190,6 +191,7 @@ header {
   background-color: #111;
   color: #fff;
   padding: 40px 20px;
+  font-family: Arial, sans-serif;
 }
 
 .footer-container {
